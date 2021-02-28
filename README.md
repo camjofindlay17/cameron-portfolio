@@ -8,7 +8,10 @@ Contact Inormation section: I have included a contact information section for th
 
 Projects section: I hae included a list of projects that I have worked on or will work on in the future. Each project has a brief description and contains a hover feature, which once clicked on will direct you to the specific project. The yet-completed projects contain place-holder text, and link to google.com. As I complete the projects outlined, I plan on installing a proper description and the correct hrefs.
 
-## Installation
+## Late Fix for HW
+ Refactored code on .project4, .project5, .project6 in the Projects section. Commented out submitted syntax, but made change for future use. Added border property to each project to better differentiate them. 
+
+### Installation
 
 Use the url (https://camjofindlay17.github.io/cameron-portfolio) to access the portfolio webpage.
 Use the url (https://github.com/camjofindlay17/cameron-portfolio) to access the repository.

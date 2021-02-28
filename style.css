@@ -147,13 +147,15 @@ section h2 {
     background-color: #41BEAF;
     border-radius: 10px;
     font-size: 20px;
+    border: 2px solid black;
 }   
 
 .project2 {
     grid-column-start: 1;
     grid-row-start: 2;
     grid-row-end: 3;
-    border-radius: 10px
+    border-radius: 10px;
+    border: 2px solid black;
 }
 
 .project3 {
@@ -162,6 +164,7 @@ section h2 {
     grid-row-end: 3;
     background-color: #41BEAF;
     border-radius: 10px;
+    border: 2px solid black;
 }
 
 .project4 {
@@ -169,6 +172,7 @@ section h2 {
     grid-row-start: 2;
     grid-row-end: 3;
     border-radius: 10px;
+    border: 2px solid black;
 }
 
 .project5 {
@@ -178,6 +182,7 @@ section h2 {
     grid-row-end: 4;
     border-radius: 10px;
     background-color:#41BEAF;
+    border: 2px solid black;
 }
 
 .project6 {
@@ -186,6 +191,7 @@ section h2 {
     grid-row-start: 3;
     grid-row-end: 4;
     border-radius: 10px;
+    border: 2px solid black;
 }
 
 #project img{
