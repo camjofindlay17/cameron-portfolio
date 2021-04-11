@@ -1,4 +1,4 @@
-#Cameron-Portfolio : Homework-7
+Cameron-Portfolio : Homework-7
 
 Updated portfolio to add first project and additional homeworks that have been completed during the course. Each update includes a link to the application as well as an icon of the application page. 
 
