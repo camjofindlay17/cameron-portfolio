@@ -2,8 +2,9 @@
 <html lang="en-us">
 <head>
     <meta charset="UTF-8"/>
-    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <title>Portfolio: Cameron Findlay</title>
 </head>
 <body>
@@ -12,23 +13,18 @@
              src="images/profile.jpg"
              alt="Profile">
         <nav>
-            <div id="contact">
-                <h1>Cameron Findlay</h1>
-                <h3>Phone: 703-203-1134</h3>
-                <h3>Email: camjofindlay@gmail.com</h3>
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                  <h1 class="display-4">Cameron Findlay</h1>
+                  <p class="lead">Phone: 703-203-1134</p>
+                  <p class="lead">Email: camjofindlay@gmail.com</p>
+                </div>
             </div>
-            <ul>
-                <li class="navlist" id="nav-about">
-                    <a href="#about">About Me</a>
-                </li>
-                <li class="navlist" id="nav-project">
-                    <a href="#project2">Projects</a>
-                </li>
-                <li class="navlist" id="nav-info"> 
-                    <a href="#contact">My Pages</a>
-                </li>
-            </ul>
-            <div id="box"></div>
+            <nav class="navbar navbar-light bg-light">
+                <a href="#about">About Me</a>
+                <a href="#project2">Projects</a>
+                <a href="#contact">My Pages</a>
+            </nav>
         </nav>
     </header>   
     <main>
@@ -62,67 +58,105 @@
             </div>
         </section>
         <div class = "content">
-            <section id="about">
-                <h2><u>About Me</u></h2>
-                <p>Hi! I'm Cameron Findlay. I am a student at the GWU Coding Bootcamp, studying full-stack web development, in order to learn fundamental skills and enter the exciting field of web development.</p>
-                <br>
-                <p>I currently work as a team lead for a popular the legal reseach firm, Westlaw. In my role, I manage a team of researchers as they provide due diligence and document retrieval services for law firms as wells as banking and accounting firms. Our clients also have a need for both domestic and international legal services, so another exciting aspect of my job is the ability to work with courts all over the world. Under my leadership, our team has developed many resources to manage specific client needs and turnaround research and retrieval in the most efficient manner.</p>
-            </section>
-
+            <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">About Me</h5>
+                  <p class="card-text">Hi! I'm Cameron Findlay. I am a student at the George Washington University Coding Bootcamp, studying full-stack web development, in order to learn fundamental skills and enter the exciting field of web development</p>
+                  <p>I currently work as a team lead for a popular the legal reseach firm, Westlaw. In my role, I manage a team of researchers as they provide due diligence and document retrieval services for law firms as wells as banking and accounting firms. Our clients also have a need for both domestic and international legal services, so another exciting aspect of my job is the ability to work with courts all over the world. Under my leadership, our team has developed many resources to manage specific client needs and turnaround research and retrieval in the most efficient manner.</p>
+                </div>
+            </div>
             <hr>
-            
-            <section>
-                <h2 id="project-title"><u>Projects</u></h2>
-            <section id="project">
-                <a class="project1" href="https://forestw70.github.io/SpaceExplorer/" alt="space" target="_blank">
-                    <div id="project2">
-                        <h3>Project: Space Explorer</h3>
-                        <img src="images/space.png" alt="CSS">
-                        <p>Enjoy a look at our galaxy with this user-friendly dashboard that provides you with quick facts about your favorite planet, lets you track the International Space Station, and shows you Mars rover pictures from your birthday. Want to know what to expect in the sky near you tonight? This app will give you a brief description of what to expect.</p>
+            <div class="container">
+                <div class="row">
+                  <div class="col-12 projects">
+                    <h3>Project: Space Explorer</h3>
+                    <div class="content-manage">
+                        <div>
+                            <img src="images/space.png" alt="CSS">
+                        </div>
+                        <div class="content space">
+                            <p>Enjoy a look at our galaxy with this user-friendly dashboard that provides you with quick facts about your favorite planet, lets you track the International Space Station, and shows you Mars rover pictures from your birthday. Want to know what to expect in the sky near you tonight? This app will give you a brief description of what to expect.</p>
+                            <a href="https://forestw70.github.io/SpaceExplorer/" target="_blank">View Webpage</a>
+                            <a href="https://github.com/camjofindlay17/cameron-portfolio" target="_blank">View Project Repository</a>
+                        </div>
                     </div>
-                </a>
-                <a class="project2" href="https://camjofindlay17.github.io/password-generator/" alt="password" target="_blank">
-                    <div>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 projects">
+                        <h3>Project: SneakerHype</h3>
+                        <div class="content-manage">
+                            <div>                            
+                                <img src="images/sneak.PNG" alt="React">                            
+                            </div>
+                            <div class="content sneaks">
+                                <p>Search for a pair of shoes that you've had an eye on to see various colorways offered and the average price point. Don't trust company-reviewed products? View reviews from people that are also interested in the shoe, or have already made a purchase. If you create an account, you will also be able to submit your own reviews of shoes you have previously purchased.</p>
+                                <a href="https://sneakerhype.herokuapp.com/" target="_blank">View Webpage</a>
+                                <a href="https://github.com/camjofindlay17/cameron-portfolio" target="_blank">View Project Repository</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 projects">
                         <h3>Password-Generator</h3>
-                        <img src="images/pass.png" alt="Password">
-                        <p>Want to keep create a safe and secure password, this app will allow you the user to tailor a randomly generated password based on their choice of parameters.</p>
+                        <div class="content-manage">
+                            <div>
+                                <img src="images/pass.png" alt="Password">
+                            </div>
+                            <div class="content">
+                                <p>Want to keep create a safe and secure password, this app will allow you the user to tailor a randomly generated password based on their choice of parameters.</p>
+                                <a href="https://camjofindlay17.github.io/password-generator/" target="_blank">View Webpage</a>
+                                <a href="https://github.com/camjofindlay17/cameron-portfolio" target="_blank">View Project Repository</a>
+                            </div>
+                        </div>
                     </div>
-                </a>
-                <a class="project3" href="https://camjofindlay17.github.io/theweatherstation/" alt="Node.js" target="_blank">
-                    <div>
+                    <div class="col-6 projects">
                         <h3>Weather Station</h3>
-                        <img src="images/weather.png" alt="Node.js">
-                        <p>Find out the current temperature and other important weather factors in your area using this weather application.</p>
-                    </div> 
-                </a>     
-                <a class="project4" href="https://github.com/camjofindlay17/homework-refactoring" alt="Refactoring" target="_blank">
-                    <div>
+                        <div class="content-manage">
+                            <div>
+                                <img src="images/weather.png" alt="Node.js">
+                            </div>
+                            <div class="content">
+                                <p>Find out the current temperature and other important weather factors in your area using this weather application.</p>
+                                <a href="https://camjofindlay17.github.io/theweatherstation/" target="_blank">View Webpage</a>
+                                <a href="https://github.com/camjofindlay17/cameron-portfolio" target="_blank">View Project Repository</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 projects">
                         <h3>Refactoring</h3>
-                        <img src="images/refactoring.jpg" alt="Refactoring">
-                        <p>Here is an early project that I worked on at the GWU Coding Bootcamp. Our project was to refactor a provided .html and .css file to the best of our ability, restructuring the internal elements of the code without effecting the behavior of the webpage.</p>
+                        <div class="content-manage">
+                            <div>
+                                <img src="images/refactoring.jpg" alt="Refactoring">
+                            </div> 
+                            <div class="content">
+                                <p>Here is an early project that I worked on at the GWU Coding Bootcamp. Our project was to refactor a provided .html and .css file to the best of our ability, restructuring the internal elements of the code without effecting the behavior of the webpage.</p>
+                                <a href="https://github.com/camjofindlay17/homework-refactoring" target="_blank">View Webpage</a>
+                                <a href="https://github.com/camjofindlay17/cameron-portfolio" target="_blank">View Project Repository</a>
+                            </div> 
+                        </div>
                     </div>
-                </a>   
-                <a class="project5" href="https://www.google.com" alt="MySQL" target="_blank">
-                    <!-- --submitted <div class="project5"> ... when border property added originally, created unwanted borders within the specific grid  -->
-                    <div>
+                    <div class="col-6 projects">
                         <h3>MySQL</h3>
-                        <img src="images/sql.png" alt="MySQL">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, dolore. Autem eos iusto commodi quo, excepturi beatae veniam deserunt rerum magni. Maiores facere tenetur unde distinctio nihil repudiandae, accusamus ullam.</p>
+                        <div class="content-manage">
+                            <div>
+                                <img src="images/mysql.png" alt="MySQL">
+                            </div>
+                            <div class="content">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, dolore. Autem eos iusto commodi quo, excepturi beatae veniam deserunt rerum magni. Maiores facere tenetur unde distinctio nihil repudiandae, accusamus ullam.</p>
+                                <a href="https://www.google.com" target="_blank">View Webpage</a>
+                                <a href="https://github.com/camjofindlay17/cameron-portfolio" target="_blank">View Project Repository</a>
+                            </div>
+                        </div>
                     </div>
-                </a>
-                <a class="project6" href="https://www.google.com" alt="React" target="_blank">
-                    <!-- --submitted <div class="project6"> ... when border property added originally, created unwanted borders within the specific grid  -->
-                    <div>
-                        <h3>React</h3>
-                        <img src="images/react.png" alt="React">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, dolore. Autem eos iusto commodi quo, excepturi beatae veniam deserunt rerum magni. Maiores facere tenetur unde distinctio nihil repudiandae, accusamus ullam.</p>
-                    </div>
-                </a>
-            </section>
+                </div>
         </div>
     </main>
     <footer>
-        <h2>Created by Cameron Findlay</h2>
+        <h6>Created by Cameron Findlay</h6>
     </footer>
 </body>
 </html>

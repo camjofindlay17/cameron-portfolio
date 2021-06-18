@@ -24,11 +24,16 @@ nav {
     width: 100%;
 }
 
-#contact {
+#info-details {
     background-image: linear-gradient(to right, rgb(255, 255, 255), #41BEAF );
     font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 15pxpx;
-    margin: 10px
+    margin: 10px;
+    font-size: 20px;
+}
+
+#name {
+    font-size: 25px;
+    font-weight: bolder;
 }
 
 h1 {
@@ -38,15 +43,32 @@ h1 {
 .navlist {
     display: inline-block;
     list-style-type: none;
-    font-size: 30px;
+    font-size: 20px;
     margin-right: 20px;
-    margin-left: 10px;
     margin-top: 15px;
 }
 
 .navlist a {
     text-decoration: none;
     color: #133934;
+}
+
+.navbar {
+    display: inline-block;
+    padding-left: 10px;
+    font-size: 20px;
+
+}
+
+.navbar-light {
+    background-color: whitesmoke
+}
+
+.navbar a{
+    text-decoration: none;
+    color: black;
+    margin-right: 10px;
+    font-family: var(--bs-font-sans-serif);
 }
 
 #box {
@@ -71,7 +93,7 @@ main .contact {
     margin: 10px;
     padding: 15px ;
     border-radius: 10px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--bs-font-sans-serif);
     min-width: 240px;
 }
 
@@ -96,10 +118,35 @@ main .contact {
     font-size: 20px;
 }
 
+.content-manage {
+    display: flex
+}
+
+.content-manage p{
+    margin-left: 5px
+}
+
 .content {
     float: right;
-    padding: 10px 30px;
+    padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.content a {
+    display: block;
+    border: 1px solid;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #41BEAF;
+    width: 200px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 2px
+}
+
+.sneaks a, .space a {
+    display: inline-block;
 }
 
 #github, #resume, #linkedin {
@@ -116,117 +163,31 @@ main .contact {
     font-size: 20px;
 }
 
+.card {
+    border: 3px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+
+.h5, h5 {
+    font-size: 1.50rem;
+}
+
 hr {
     margin: 30px
 }
 
-section h2 {
-    font-size: 35px
+.projects {
+    border: 3px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    margin-bottom: 5px;
+    background-color: #fff;
+    padding: 1rem 1rem
 }
 
-#project-title {
-    margin-bottom: 30px;
-}
-
-#project {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    opacity: 1;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-#project a {
-    text-decoration: none;
-    color: black
-}
-
-.project1, .project2, .project3, .project4, .project5, .project6 {
-    margin: 5px;
-}
-
-#project h3 {
-    font-size: 20px;
-    margin: 5px
-}
-
-.project1 {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 1;
-    background-color: #41BEAF;
-    border-radius: 10px;
-    font-size: 20px;
-    border: 2px solid black;
-}   
-
-.project2 {
-    grid-column-start: 1;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    border-radius: 10px;
-    border: 2px solid black;
-}
-
-.project3 {
-    grid-column-start: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    background-color: #41BEAF;
-    border-radius: 10px;
-    border: 2px solid black;
-}
-
-.project4 {
-    grid-column-start: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    border-radius: 10px;
-    border: 2px solid black;
-}
-
-.project5 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    border-radius: 10px;
-    background-color:#41BEAF;
-    border: 2px solid black;
-}
-
-.project6 {
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    border-radius: 10px;
-    border: 2px solid black;
-}
-
-#project img{
-    float: left;
-    padding: 5px 5px
-}
-
-.project1:hover, .project2:hover, .project3:hover, .project4:hover, .project5:hover, .project6:hover {
-    opacity: 0.6;
+.projects h3 {
+    font-size: 1.50rem;
 }
 
 footer {
-    text-align: center;
-    margin-top: 30px
+    text-align: center
 }
-
-@media screen and (max-width: 970px) {
-    nav {
-        display:block;
-        text-align: center;
-    }
-    #project {
-        grid-column: auto;
-    }
-}
-
-
