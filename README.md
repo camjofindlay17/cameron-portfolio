@@ -1,4 +1,15 @@
-Cameron-Portfolio : Homework-7
+# Cameron-Portfolio : Homework-14
+
+Updated portfolio to add additional project, SneakerHype, to my portfolio and made styling changes to the portfolio to create a more clean, stylistic page.
+
+Reviewed GitHub profile and LinkedIn page, as well as resume, to make sure that they reflect an up to date professional material.
+
+Use the url (https://camjofindlay17.github.io/cameron-portfolio) to access the portfolio webpage.
+Use the url (https://github.com/camjofindlay17/cameron-portfolio) to access the repository.
+Use the url (https://www.linkedin.com/in/cameron-f-3070331b7/) to access the LinkedIn webpage.
+Use the url (https://github.com/camjofindlay17) to access the GitHub profile page.
+
+# Cameron-Portfolio : Homework-7
 
 Updated portfolio to add first project and additional homeworks that have been completed during the course. Each update includes a link to the application as well as an icon of the application page. 
 
